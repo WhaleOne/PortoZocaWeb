@@ -8,33 +8,12 @@ import {MenuItem} from 'primeng/api';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PZWeb';
+  logoImg = "https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png";
+  notice = "O clima está ruim lá fora!";
+  headerMenus = ["Cadastros", "Movimentos", "Estatísticas"];
 
   teste(){
-    alert("helllow");
-  }
-
-
-
-  items: MenuItem[];
-  gOnInit() {
-    this.items = [
-        {
-            label: 'File',
-            icon: 'pi pi-pw pi-file',
-            items: [{
-                    label: 'New', 
-                    icon: 'pi pi-fw pi-plus',
-                    items: [
-                        {label: 'User', icon: 'pi pi-fw pi-user-plus'},
-                        {label: 'Filter', icon: 'pi pi-fw pi-filter'}
-                    ]
-                },
-                {label: 'Open', icon: 'pi pi-fw pi-external-link'},
-                {separator: true},
-                {label: 'Quit', icon: 'pi pi-fw pi-times'}
-            ]
-        }];
+    return "hlooweee";
   }
   
 }

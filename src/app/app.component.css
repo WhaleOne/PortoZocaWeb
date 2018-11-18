@@ -1,7 +1,66 @@
+body {
+    margin:0;
+}
+
 .header {
     background-color: black;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    color: white;
+    height: 110px;
+    width: 100%;
+    margin: 0px;
+}
+
+.header-img {
+    /* background-color: red; */
+    height: 100%;
+    width: 300px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    float: left;
+}
+
+.header-buttons {
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-button {
+    background-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: white;
+    border-right-color: white;
+    color: white;
+    height: 100%;
+    width: 130px;
+    font-size: 20px;
+}
+
+.header-user {
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* the code bellow is just for test */
+    font-size: 20px;
+    width: 300px;
+    /* background-color: green; */
+
+}
+
+.header-notices {
+    color: white;
+    background-color: rgb(105, 3, 3);
+    vertical-align: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
