@@ -14,7 +14,11 @@ export class AppComponent {
 
   logoImg = "https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png";
   notice = "O clima está ruim lá fora!";
-  headerMenus = ["Cadastros", "Movimentos", "Estatísticas"];
+  headerMenus = [
+    {name: "Cadastros", page:"/home"},
+    {name: "Movimentos", page:"/vehicle-maintenance"},
+    {name: "Estatísticas", page:"/"}
+  ];
 
   loadView(){
     this.http.get("https://geek-jokes.sameerkumar.website/api").subscribe(r => this.notice = r.toString());

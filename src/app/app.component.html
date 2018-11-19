@@ -2,8 +2,8 @@
   <div class="header">
     <img class="header-img" src="{{logoImg}}">
     <div class="header-buttons">
-      <button *ngFor="let headerButton of headerMenus" type="button" class="h-button">
-        {{headerButton}}
+      <button *ngFor="let headerButton of headerMenus" type="button" class="h-button" routerLink="{{headerButton.page}}">
+        {{headerButton.name}}
       </button>
     </div>
     <div class="header-user">USER DATA----------------------------</div>
@@ -13,4 +13,4 @@
   </div>
   <div class="header-notices" [innerHTML]="notice"></div>
 </div>
-<app-home></app-home>
+<router-outlet></router-outlet>

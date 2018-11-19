@@ -7,17 +7,20 @@ import {PanelMenuModule} from 'primeng/panelmenu';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { VehicleMaintenanceComponent } from './vehicle-maintenance/vehicle-maintenance.component';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ButtonModule,
-    PanelMenuModule
+    PanelMenuModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
